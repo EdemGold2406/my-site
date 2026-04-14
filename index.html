@@ -100,18 +100,33 @@
                 <p class="text-slate-600 dark:text-slate-400 mb-12">Built to solve real enterprise bottlenecks.</p>
 
                 <div class="space-y-16">
-                    <!-- Project 1 -->
-                    <div class="pdf-avoid-break transition-colors duration-300 bg-slate-50 dark:bg-slate-800/30 p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
-                        <div class="text-sky-600 dark:text-sky-400 text-sm font-bold code-font mb-2">Project 01 / LangGraph + Supabase + DeepEval</div>
-                        <h3 class="text-2xl font-bold mb-4">Implemented a distributed state-machine with 100% fault tolerance</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                            A long-running agentic workflow performing competitive analysis. Built with the understanding that agents are inherently unreliable. Engineered a checkpointing system using Supabase to save "Agent State" at every step, allowing recovery from API crashes without restarting.
-                        </p>
-                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
-                            <li class="flex items-start"><i class="ph ph-check-circle text-sky-500 mt-1 mr-2"></i> <strong>Performance:</strong> Zero data loss on API rate limit crashes.</li>
-                            <li class="flex items-start"><i class="ph ph-check-circle text-sky-500 mt-1 mr-2"></i> <strong>Evals:</strong> Automated testing framework scoring 0.89+ on relevance.</li>
-                        </ul>
-                    </div>
+                   <!-- Project 1 -->
+<div class="pdf-avoid-break transition-colors duration-300 bg-slate-50 dark:bg-slate-800/30 p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+    <div class="text-sky-600 dark:text-sky-400 text-sm font-bold code-font mb-2">Project 01 / LangGraph + Supabase + Groq</div>
+    <h3 class="text-2xl font-bold mb-4">Resilient Agentic Workflow (Fault-Tolerant Architecture)</h3>
+    <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+        Developed a production-grade, stateful AI agent for automated competitive intelligence. Standard LLM agents suffer from "happy-path" failures; I engineered a checkpointing system using LangGraph and Supabase to persist agent state at every node, enabling <strong>resume-from-crash</strong> capabilities.
+    </p>
+    <div class="mb-4">
+        <p class="text-sm text-slate-700 dark:text-slate-300 font-semibold mb-2">Key Challenges & Solutions:</p>
+        <ul class="space-y-1 text-slate-600 dark:text-slate-400 text-sm list-disc list-inside ml-2">
+            <li><strong>Connection Pooler Conflicts:</strong> Resolved `DuplicatePreparedStatement` errors via custom `psycopg` pool tuning.</li>
+            <li><strong>Schema Drift:</strong> Implemented manual SQL provisioning to ensure robust compatibility between orchestration layers and database schema.</li>
+        </ul>
+    </div>
+    <div class="flex flex-wrap gap-4 pt-4">
+        <a href="https://github.com/EdemGold2406/Resilient-Agentic-Workflow" target="_blank" class="text-sky-500 font-bold hover:underline flex items-center">
+            <i class="ph ph-github-logo mr-1"></i> View Source
+        </a>
+        <a href="https://resilient-agentic-workflow.onrender.com/docs" target="_blank" class="text-sky-500 font-bold hover:underline flex items-center">
+            <i class="ph ph-file-text mr-1"></i> API Documentation
+        </a>
+    </div>
+    <!-- Add this if you upload your project_1.mp4 to a place like Cloudinary or a public S3 bucket, or if you keep it locally, link to your LinkedIn post -->
+    <a href="YOUR_LINKEDIN_POST_URL_OR_VIDEO_LINK" target="_blank" class="text-sky-500 font-bold hover:underline flex items-center mt-2">
+        <i class="ph ph-video mr-1"></i> Watch Demo (Crash & Resume)
+    </a>
+</div>
 
                     <!-- Project 2 -->
                     <div class="pdf-avoid-break transition-colors duration-300 bg-slate-50 dark:bg-slate-800/30 p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
